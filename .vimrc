@@ -4,6 +4,7 @@ set wrap
 set laststatus=2
 set incsearch
 set tabstop=4
+set shortmess-=S
 
 colorscheme habamax
 
