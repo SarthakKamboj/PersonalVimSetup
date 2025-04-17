@@ -2,6 +2,8 @@ set number
 set hlsearch
 set wrap 
 set laststatus=2
+set incsearch
+set tabstop=4
 
 colorscheme habamax
 
@@ -25,6 +27,17 @@ noremap <C-y> <Esc>:Rg<cr>
 noremap <C-c> "*y
 noremap <C-v> "*p
 
+" remaps regular word search in file to be case insensitive
+nnoremap / /\c
+
+" Copies text to VIM clipboard and system clipboard
+xnoremap y "*y
+
+function! CopyToClipboard(text)
+	"let @+ = a:text	
+	echo "${text}""
+endfunction
+
 " default adding pairs for {,(,[,",' (only do these in insert mode)
 inoremap { {}<Esc>:startinsert<cr>
 inoremap ( ()<Esc>:startinsert<cr>
@@ -41,3 +54,4 @@ call plug#begin()
 	" nerdtree
 	Plug 'preservim/nerdtree'
 call plug#end()
+
