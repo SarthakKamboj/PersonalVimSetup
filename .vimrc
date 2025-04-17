@@ -42,6 +42,7 @@ inoremap " ""<Esc>:startinsert<cr>
 inoremap ' ''<Esc>:startinsert<cr>
 
 " installed vim-plug from this github intructions: https://github.com/junegunn/vim-plug
+" Make sure to run the first time :PlugInstall to install these plugins
 call plug#begin()
 	" fuzzy finder for vim 
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
