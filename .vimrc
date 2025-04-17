@@ -33,11 +33,6 @@ nnoremap / /\c
 " Copies text to VIM clipboard and system clipboard
 xnoremap y "*y
 
-function! CopyToClipboard(text)
-	"let @+ = a:text	
-	echo "${text}""
-endfunction
-
 " default adding pairs for {,(,[,",' (only do these in insert mode)
 inoremap { {}<Esc>:startinsert<cr>
 inoremap ( ()<Esc>:startinsert<cr>
