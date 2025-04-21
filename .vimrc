@@ -4,6 +4,7 @@ set wrap
 set laststatus=2
 set incsearch
 set tabstop=4
+set shiftwidth=4
 set shortmess-=S
 
 colorscheme habamax
@@ -19,10 +20,10 @@ noremap <C-j> <Esc><C-w>j
 noremap <C-k> <Esc><C-w>k
 noremap <C-l> <Esc><C-w>l
 
-" remaps file search to ctrl + u
-noremap <C-u> <Esc>:FZF<cr>
-" remaps word search to ctrl + y
-noremap <C-y> <Esc>:Rg<cr>
+" remaps file search to ctrl + y
+noremap <C-y> <Esc>:FZF<cr>
+" remaps word search to ctrl + u
+noremap <C-u> <Esc>:Rg<cr>
 
 " remaps ctrl + c/v to copy/paste
 noremap <C-c> "*y
@@ -35,11 +36,11 @@ nnoremap / /\c
 xnoremap y "*y
 
 " default adding pairs for {,(,[,",' (only do these in insert mode)
-inoremap { {}<Esc>:startinsert<cr>
-inoremap ( ()<Esc>:startinsert<cr>
-inoremap [ []<Esc>:startinsert<cr>
-inoremap " ""<Esc>:startinsert<cr>
-inoremap ' ''<Esc>:startinsert<cr>
+" inoremap { {}<Esc>:startinsert<cr>
+" inoremap ( ()<Esc>:startinsert<cr>
+" inoremap [ []<Esc>:startinsert<cr>
+" inoremap " ""<Esc>:startinsert<cr>
+" inoremap ' ''<Esc>:startinsert<cr>
 
 " installed vim-plug from this github intructions: https://github.com/junegunn/vim-plug
 " Make sure to run the first time :PlugInstall to install these plugins
